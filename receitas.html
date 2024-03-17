@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Receitas "Cringe" - Receitas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/livro-de-receitas.png" alt="Logo do Site" height="30">
+            </a>
+            <h1 class="text-white recipe-title">Receitas do Chicó</h1> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main class="container" style="margin-top: 100px; margin-bottom: 100px;">
+    <section id="receitas">
+        <div class="recipe">
+            <div class="thumbnails">
+                <div class="recipe-thumbnail">
+                    <div class="card" style="width: 300px;">
+                        <img src="img/receita1-thumbnail.jpeg" alt="Receita 1" onclick="showRecipe(0)" class="card-img-top">
+                        <div class="card-body recipe-details">
+                            <h3 class="card-title">Peixe de Coco</h3>
+                            <p class="card-text">200 grama(s) de filé de pescada sem pele e sem espinhos<br>600 ml(s) de leite de coco<br>2 dente(s) de alho picados<br>2 unidade(s) de tomates picados 100g<br>1 unidade(s) de cebola picada 100g<br>1 unidade(s) de pimentão verde picado 100g<br>60 grama(s) de cebola roxa cortada em rodelas finas<br>Sal, pimenta do reino, azeite e folhas de coentro a gosto<br>100 grama(s) de castanha-do-pará picada grosseiramente</p>
+                            <hr>
+                            <p class="card-text">Modo de Preparo:<br>Em uma panela, coloque o alho, a cebola e refogue bem. Acrescente o pimentão, o tomate, e a cebola roxa. Tempere o peixe com o sal, a pimenta-do-reino. Após temperado, coloque o peixe e o creme de leite na panela com os outros ingredientes. Deixe cozinhando e adicione castanhas-do-Pará e folhas de coentro para decorar. Sirva.</p>
+                        </div>
+                    </div>
+                    <div class="click-hint">
+                        <img src="img/seta-esquerda.png" alt="Seta para esquerda" onclick="showRecipe(0)">
+                    </div>
+                </div>
+                <div class="recipe-thumbnail">
+                    <div class="card" style="width: 300px;">
+                        <img src="img/receita2-thumbnail.jpeg" alt="Receita 2" onclick="showRecipe(1)" class="card-img-top">
+                        <div class="card-body recipe-details">
+                            <h3 class="card-title">Baião de Dois</h3>
+                            <p class="card-text">Feijão verde<br>1/2 kg de feijão verde<br>Linguiça paio<br>1 paio cortado em rodelas<br>Caldo de carne<br>2 tabletes de caldo de carne<br>Cebola<br>1 cebola ralada<br>Alho<br>1 dente de alho amassado<br>Óleo<br>3 colheres (sopa) de óleo<br>Coentro<br>1/2 colher (sopa) de coentro picado<br>Arroz<br>2 xícaras e 1/2 (chá) de arroz lavado e escorrido<br>Queijo coalho<br>150 g de queijo de coalho cortado em fatias finas</p>
+                            <hr>
+                            <p class="card-text">Modo de Preparo:<br>Deixe o feijão de molho de véspera. No dia seguinte cozinhe-o juntamente com o caldo de carne e 2,5 litros de água fria.<br>Tampe a panela e deixe cozinhar em fogo baixo por aproximadamente 1 hora.<br>Em outra panela doure o paio, a cebola e o alho, no óleo. Junte o coentro e o arroz e refogue bem. Acrescente o feijão já cozido, juntamente com o caldo. Misture bem, tampe a panela e deixe cozinhar até que o arroz fique cozido, úmido e com consistência cremosa.<br>Cubra o arroz com as fatias de queijo. Tampe a panela novamente e deixe que o vapor derreta o queijo.</p>
+                        </div>
+                    </div>
+                    <div class="click-hint">
+                        <img src="img/seta-esquerda.png" alt="Seta para esquerda" onclick="showRecipe(1)">
+                    </div>
+                </div>
+                <div class="recipe-thumbnail">
+                    <div class="card" style="width: 300px;">
+                        <img src="img/receita3-thumbnail.jpeg" alt="Receita 3" onclick="showRecipe(2)" class="card-img-top">
+                        <div class="card-body recipe-details">
+                            <h3 class="card-title">Cuscuz Recheado</h3>
+                            <p class="card-text">4 colheres (sopa) de óleo<br>1 cebola picada<br>1 cenoura picada<br>200g de vagem picada<br>3 tomates sem sementes picados<br>1 lata de ervilha escorrida<br>1 vidro de palmito picado (300g)<br>1/2 xícara (chá) de azeitona verde em rodelas<br>1 lata de milho escorrido<br>1 cubo de caldo de legumes<br>1 xícara (chá) de água<br>1 lata de molho de tomate<br>Sal e cheiro-verde picado a gosto<br>2 e 1/2 xícaras (chá) de farinha de milho (aproximadamente)<br>1 xícara (chá) de queijo mussarela ralado<br>1 xícara (chá) de queijo coalho ralado</p>
+                            <hr>
+                            <p class="card-text">Modo de Preparo:<br>Aqueça uma panela com o óleo, em fogo médio e refogue a cebola até dourar.<br>Adicione a cenoura, a vagem e refogue por 3 minutos.<br>Junte o tomate, a ervilha, o palmito, a azeitona, o milho e refogue por mais 3 minutos.<br>Acrescente o caldo de legumes, a água e o molho de tomate e cozinhe até ferver.<br>Tempere com sal e cheiro-verde, adicione a farinha de milho, aos poucos, mexendo até engrossar e soltar do fundo da panela.<br>Se necessário, adicione mais farinha.<br>Decore uma fôrma de 24cm de diâmetro de buraco no meio untada com palmito, azeitona, ervilha e ovos de codorna e tomate-cereja.<br>Espalhe metade da massa sobre essa decoração e aperte bem deixando uma cova no meio.<br>Espalhe os queijos misturados nessa cova e por cima acerte a massa restante, apertando.<br>Leve ao forno médio, preaquecido, por 5 minutos.<br>Retire, desenforme e sirva em seguida.</p>
+                        </div>
+                    </div>
+                    <div class="click-hint">
+                        <img src="img/seta-esquerda.png" alt="Seta para esquerda" onclick="showRecipe(2)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 Receitas do Chicó</p>
+    </div>
+</footer>
+
+<script>
+    function showRecipe(index) {
+        var thumbnails = document.querySelectorAll('.thumbnails img');
+
+        thumbnails.forEach(function (thumbnail) {
+            thumbnail.classList.remove('active');
+        });
+
+        thumbnails[index].classList.add('active');
+
+        var recipeDetails = document.querySelectorAll('.recipe-details');
+        recipeDetails.forEach(function (details) {
+            details.classList.remove('active');
+        });
+
+        var selectedRecipeDetails = document.querySelectorAll('.recipe-details')[index];
+        selectedRecipeDetails.classList.add('active');
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
